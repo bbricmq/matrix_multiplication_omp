@@ -6,20 +6,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
-#include <omp.h>
 #include <random>
-#include <ctime>
-#include <vector>
-
-std::vector<double> getRandomMatrix(int sz) {
-  std::mt19937 gen;
-  gen.seed(static_cast<unsigned int>(time(0)));
-  std::vector<double> vec(sz * sz);
-  for (int i = 0; i < sz * sz; i++) {
-    vec[i] = gen() % 9 + 1;
-  }
-  return vec;
-}
 
 std::vector<double> regularMultiplication(const std::vector<double>& a,
                                           const std::vector<double>& b,
