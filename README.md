@@ -1,5 +1,5 @@
 # Parallel matrix multiplication algorithms
-#### Elements of the double type were used in range [1.0, 10000]
+#### Elements of the double type were used in range [1.0, 10000.0]
 ### Computing time
 | Size | Naive, 2 threads | Strassen | Fox |
 |-|:-:|:-:|:-:|
