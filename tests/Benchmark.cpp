@@ -17,7 +17,7 @@ void TestMatrixAlg(multiplication_function<T> mult_function,
 
     double start, end, duration;
     
-	omp_set_num_threads(4);
+    omp_set_num_threads(4);
     start = omp_get_wtime();
     mult_function(a, b, a.size());
     end = omp_get_wtime();
@@ -25,7 +25,7 @@ void TestMatrixAlg(multiplication_function<T> mult_function,
     duration = end - start;
 
     std::cout << "Time: " << duration << "s | ";
-	std::cout << std::endl << std::endl;
+    std::cout << std::endl << std::endl;
 }
 
 int main() {
