@@ -1,16 +1,16 @@
 # Parallel matrix multiplication algorithms
-#### Elements of the double type were used in range [1.0, 10000.0]
+#### Elements of the int type were used in range [1, 10000]
 ### Computing time
-| Size | Naive, 2 threads | Strassen | Fox |
+| Size | Naive | Strassen | Fox |
 |-|:-:|:-:|:-:|
-| 256 | 0.092 s | 0.055 s | 0.02 s |
-| 512 | 2.5 s | 2.7 s | 0.87 s |
-| 1024 | 12 s | 4.2 s | 3.4 s |
-| 2048 | 49.2 s | 35.22 s | 25 s |
-| 4096 | 230.25 s | 184.5 s | 225.1 s |
+| 256 | 0.029 s | 0.03 s | 0.011 s |
+| 512 | 0.54 s | 0.24 s | 0.23 s |
+| 1024 | 4.04 s | 1.21 s | 2.34 s |
+| 2048 | 77.3 s | 8.2 s | 49.68 s |
+| 4096 | 621 s | 58 s | 421 s |
 
 ### The amount of memory consumed
-| Size | Naive, 2 threads | Strassen | Fox |
+| Size | Naive | Strassen | Fox |
 |-|:-:|:-:|:-:|
 | 256 | 10.47 Mb | 12.12 Mb | 11.61 Mb |
 | 512 | 13.61 Mb | 18.02 Mb |  15.3 Mb |
@@ -21,5 +21,5 @@
 ### Acceleration of parallel algorithms for matrix multiplication depending on the number threads
 | Number of threads | Naive | Strassen | Fox |
 |-|:-:|:-:|:-:|
-| 4 | 2.1 s | 3.3 s | 4.2 s |
-| 9 | 2.24 s | 2.8 s |  6.5 s |
+| 4 | 2.14 s | 2.5 s | 5.1 s |
+| 9 | 2.6 s | 2.71 s |  7.2 s |
