@@ -21,5 +21,5 @@
 ### Acceleration of parallel algorithms for matrix multiplication depending on the number threads
 | Number of threads | Naive | Strassen | Fox |
 |-|:-:|:-:|:-:|
-| 4 | 2.14 s | 2.5 s | 5.1 s |
-| 9 | 2.6 s | 2.71 s |  7.2 s |
+| 4 | 2.14 | 2.5 | 5.1 |
+| 9 | 2.6 | 2.71 |  7.2 |
